@@ -3,11 +3,11 @@ from fastapi import FastAPI
 tags_metadata = [
         {
             "name": "About",
-            "description": "Operations with users. The **login** logic is also here.",
+            "description": "Who am I.",
         },
         {
             "name": "Locations",
-            "description": "Operations with users. The **login** logic is also here.",
+            "description": "Locations where I am open to employment.",
         }
     ]
 
