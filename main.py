@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI
 
 tags_metadata = [
@@ -36,4 +37,5 @@ async def about():
 async def locations():
     return ({"Oregon": "All Locations", "California": "San Diego County"})
 
-# Run - python -m uvicorn main:app --reload
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="localhost", port=5000, log_level="info")
